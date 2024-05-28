@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Slot Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gas Slot Booking System</h1>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="gasType">Gas Type:</label>
+            <select id="gasType" name="gasType" required>
+                <option value="LPG">LPG</option>
+                <option value="CNG">CNG</option>
+                <option value="PNG">PNG</option>
+            </select>
+
+            <label for="slot">Select Slot:</label>
+            <select id="slot" name="slot" required>
+                <option value="9-10 AM">9-10 AM</option>
+                <option value="10-11 AM">10-11 AM</option>
+                <option value="11-12 PM">11-12 PM</option>
+                <option value="12-1 PM">12-1 PM</option>
+                <option value="1-2 PM">1-2 PM</option>
+            </select>
+
+            <button type="submit">Book Slot</button>
+        </form>
+
+        <h2>Bookings</h2>
+        <div id="bookingList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
